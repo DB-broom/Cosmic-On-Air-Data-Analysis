@@ -285,7 +285,7 @@ def parse_gmc500(file_path):
     return df
 
 def processCSV(filepath):
-    from vibellm import process_csv_file
+    from llm_csv_handler import process_csv_file
 
     df = process_csv_file(filepath)
     first_common = find_most_common_by_sampling(df, "timestamp", Date=True)
